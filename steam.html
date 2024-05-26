@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helou forasteiro</title>
+    
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000; /* Cor de fundo */
+        }
+        .container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            color: white; /* Cor do texto */
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o texto */
+            width: 100%;
+            text-align: center;
+            z-index: 1; /* Garante que o texto fique acima do vídeo */
+        }
+        video {
+            width: 100%; /* Largura total do contêiner */
+            height: 100%; /* Altura total do contêiner */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nothing here<b></b></h1>
+        <video controls autoplay muted>
+            <source src="./caos.mp4.html" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+</body>
+</html>
